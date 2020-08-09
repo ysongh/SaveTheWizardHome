@@ -25,11 +25,10 @@ public class FireballSpawn : MonoBehaviour
     {
         int randomFireball1 = Random.Range(0, spawnPoints.Length);
         int randomFireball2 = Random.Range(0, spawnPoints.Length);
-        int randomFireball3 = Random.Range(0, spawnPoints.Length);
 
         for(int i = 0; i < spawnPoints.Length; i++)
         {
-            if(randomFireball1 == i || randomFireball2 == i || randomFireball3 == i)
+            if(randomFireball1 == i || randomFireball2 == i)
             {
                 Instantiate(fireballPrefab, spawnPoints[i].position, Quaternion.identity);
             }

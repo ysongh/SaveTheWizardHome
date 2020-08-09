@@ -133,5 +133,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cd687bb07c604624f960c30fabfd72b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  fireBrustEffect: {fileID: 5049082950750061752, guid: 91217bbf5c1b7414e8ab1d57a6c64e8d,
+    type: 3}
+  houseHitEffect: {fileID: 8244845472631055089, guid: 0a6f6896ee2aacf4d8fa5a0af753b4c9,
+    type: 3}
   rb: {fileID: 6839812879214628515}
   speed: 10

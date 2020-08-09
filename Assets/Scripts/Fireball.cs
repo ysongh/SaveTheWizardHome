@@ -2,6 +2,7 @@
 
 public class Fireball : MonoBehaviour
 {
+    public GameObject houseHitEffect;
     public Rigidbody2D rb;
     public float speed = 6f;
 
@@ -9,15 +10,14 @@ public class Fireball : MonoBehaviour
     {
         if(col.collider.tag == "shield")
         {
-            Debug.Log("shield");
+            Destroy(gameObject);
         }
 
         if(col.collider.tag == "house")
         {
-            Destroy(gameObject);
+            HouseHitParticleEffect();
         }
     }
-
 
     void Update()
     {
@@ -26,5 +26,12 @@ public class Fireball : MonoBehaviour
         Vector2 newPosition = rb.position + Vector2.right * x;
 
         rb.MovePosition(newPosition);
+    }
+
+    void HouseHitParticleEffect()
+    {
+        Instantiate(houseHitEffect, transform.position, Quaternion.identity);
+
+        Destroy(gameObject);
     }
 }
