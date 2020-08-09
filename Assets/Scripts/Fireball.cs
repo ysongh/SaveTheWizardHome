@@ -6,16 +6,18 @@ public class Fireball : MonoBehaviour
     public Rigidbody2D rb;
     public float speed = 6f;
 
-    void OnCollisionEnter2D(Collision2D  col)
+    void OnCollisionEnter2D(Collision2D col)
     {
         if(col.collider.tag == "shield")
         {
             Destroy(gameObject);
+            FindObjectOfType<GameManager>().AddScore();
         }
 
         if(col.collider.tag == "house")
         {
             HouseHitParticleEffect();
+            FindObjectOfType<GameManager>().HomeDamage();
         }
     }
 
