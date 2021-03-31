@@ -1,6 +1,8 @@
 # Save The Wizard Home
 A game where you control the shield by using the up and down arrows. You need the block the waves of fireballs with the shield before it hits the wizard's home. It is game over when the wizard's home is hit by the fireballs five times.
 
+- Slate URL: https://slate.host/ysongh1/cid:QmQjXrSu1UgvwzC673FSELrWU637SiaRPHQqgtKVxBkZBq
+
 ## Preview
 ![menu](https://res.cloudinary.com/ysongit/image/upload/v1596951161/project/Screen_Shot_2020-08-09_at_1.30.14_AM_csdktj.png "Menu")
 
